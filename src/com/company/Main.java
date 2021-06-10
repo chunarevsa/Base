@@ -7,10 +7,37 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+		"На изучение" /*
+		map1.keySet().toArray(nameArr); // Что делает toArray(nameArray)
+		"Из задачи 2, Блок Списки" 
+	  
+		Scanner scanner = new Scanner(System.in);
+			  Scanner scanner2 = new Scanner(System.in);
+			  Class bowling = new Class();
+			  System.out.println("Введите количество игроков: ");
+			  int amountPlayers = scanner.nextInt();
+			  for (int i = 0; i < amountPlayers; i++) {
+				  String nameAndScorePlayer = scanner2.nextLine(); 
+					String [] values = nameAndScorePlayer.split(" "); 
+					//Почему-о пришлось создать второй сканер
+				  String namePlayer = values[0];
+				  int playerScore = Integer.parseInt((values[1]));
+				  bowling.addPlayer(namePlayer, playerScore); 
+				  //  Интересеная конструкция (см. класс)
+			  }
+			  bowling.getWinner(); 
+	  
+		Collections.		*/
+	  
+
+
+
+
 "\n"    //  - новой строки
  String[] st = "Hello World".split(" ");  
 	"Разбиваем строку на два слова
-	st - спсок в котором харниться отдельно Hello и World" 
+	st - список в котором харниться отдельно Hello и World" 
 	  
 	System.err.println(); // вместо out - err. будет подсвеченно красным (ошибка)
 
@@ -62,7 +89,9 @@ public class Main {
 		  || - и 
 */
 
- "Видео Devcolibri Урок 9 Преобразование типов данных" /*
+ "Преобразование типов данных" /*
+		  
+ 		"Видео Devcolibri Урок 9"
     static int a = 2; static double b = 4.9; int c = (int) b;
     c - будет равно 4, такое преобразование убирает не целочисленное
     double d = a; // в таком случае можно  без ()
@@ -84,7 +113,8 @@ public class Main {
     int t = fl.intValue(); // Преобразование не в ссылочный
     */
 
- "Видно Devcolibri 10 Арифметические операции и переменные" /*
+ "Арифметические операции и переменные" /*
+		  "Видно Devcolibri 10 "
     int a = -4; Math.abs(a); // Модуль
     Math.sin(a); // Синус
     Math.PI; // Число Пи
@@ -96,7 +126,8 @@ public class Main {
     final int a;   // невозможно переназначить (переменные и методы)
     null; если переменная отстутствует */
 
- "Видно Devcolibri 11 Условия и Циклы" /* 
+ "Условия и Циклы" /* 
+		  Видно Devcolibri 11 
     == равно, != не равно, >= <=, || или, && и, !x - не переменная
     if () { } else if { } else {}
     switch (5) // { переключатель
@@ -114,7 +145,8 @@ public class Main {
         Список состоит из строк. В переменную s будет по очереди 
 		   помощены данные
 
-         Пример:
+			"Sololern"
+      Пример:
         for(int i=0;i<3;i++) //{
             String input = sc.nextLine();
             String[] values = input.split(" ");
@@ -124,8 +156,8 @@ public class Main {
          } Принимает имя и кол. очков в одной строе.
          Далее разделяет имя и очки в разные переменные. */
 
- "Видео Devcolibri Урок 14 и 19 Методы, функции  и Классы" /* 
-
+ "Методы, функции  и Классы" /* 
+				"Видео Devcolibri Урок 14 и 19" 
     "Метод и функция это одно и тоже. Пишутся вне метода main 
     Метод то что умеет делать Класс. Функция то что выполняет какие либо действия."
 
@@ -168,7 +200,9 @@ public class Main {
 	 dog.bark(); // Вывод "Woof-Woof" 
 	 */
 
- "Видео Devcolibri Урок 16 Массивы" /* 
+ "Массивы" /* 
+
+ 		Видео Devcolibri Урок 16 
     int nums1 [] = new int[i]; // i кол. элементов
     nums1 [n] = 2; // - n индекс числа 2 в массиве
     int [ ] nums2 = {1, 20, 32, 4}; // задать масив проще через фигурные
@@ -188,7 +222,8 @@ public class Main {
 		}
 		System.out.println("\n"); */
 
- "Видео Devcolibri Урок 30 Коллекции (Динамические массивы) " // /* 
+ "Коллекции (Динамические массивы) "  /* 
+			"Видео Devcolibri Урок 30" 
     "Коллекции - Массивы в которые мы можем добавлять/удалять/менять элементы
        Collection и Map  Интерфейсы 
           /   |   \
@@ -273,6 +308,7 @@ public class Main {
     for (String k : strings3) // { Так мы получим списко ключей
         System.out.println(k); // } key4, key 3, key2, key1
     "Так ключи будет в произвольном порядке (или в обратно, но это не точно)"
+	 map1.keySet(); // можно вывести так, но значения буду в ввиде массива
 
     for (Integer k2 : map1.values()); //{  так мы получим все значемния
             System.out.println(k2); // }  55, 1, 0, 2
@@ -280,16 +316,27 @@ public class Main {
     map1.containsKey(); // Проверяем есть ли конкретный ключ false\true
     map1.containsValue(); // Проверяем есть ли такое значение false\true
     " Остальное всё как в лист "
+
+	
+	// Пример как можно добавить в MAP разные значения с одной строки 
+	 for (int i = 1; i < amountPlayers; i++) {
+			String nameAndScorePlayer = scanner.nextLine(); 
+		 	String [] values = nameAndScorePlayer.split(" ");
+			String name = values[0];
+			int score = Integer.parseInt(values[1]); 
+		}
 	 */
 
- "Видео Devcolibri Урок 17 Нейминг" /* 
+ "Нейминг" /* 
+ 		"Видео Devcolibri Урок 17" 
     public class JavaExampelsCode {} // Классы
     int ageDog; // Переменные
     void getEmail () {} // Метод (Действия)
     public class Cat {} // Класс
 	 */
 
- "Видео Devcolibri Урок 21 Конструкторы. "/* 
+ "Конструкторы. "/*
+			"Видео Devcolibri Урок 21" 
      "Конструктор создаётся в классе"
 	      public Cat(int age, String catBreed, String name) {
             this.age = age;
@@ -315,7 +362,8 @@ public class Main {
          Он просто пустой"
 			*/
     
- "Видео Devcolibri Урок 22/23 Наследование/Полиморфизм/Абстарктные классы" /*
+ "Наследование/Полиморфизм/Абстарктные классы" /*
+	 	Видео Devcolibri Урок 22/23 
 	 
     "Наследование"
     public class Sportsman extends People {} // унаследование класса
@@ -373,7 +421,9 @@ public class Main {
              }
          }; */
 
- "Видео 22 Интерфесы (Исполнения)" /*
+ "Интерфесы (Исполнения)" /*
+
+			Видео 22 
         public interface Array {
 		  	} //автоматически static и abstract
         "показывают что будет происходить в классе, но не реализовывать его."
@@ -384,7 +434,9 @@ public class Main {
         "в интерфейсах все переменные константы
          Поэтому в интерфейсах чаще указывает Что будет делать объект" */
 
- "Видео Devcolibri Урок 27 Перегрузка методов " /* 
+ "Перегрузка методов " /* 
+
+			  "Видео Devcolibri Урок 27" 
     "Это возможность перегрузить уже существующий метод, 
      для изменения его функционала, не переименовывая 
     смотри класс MethadExam"
@@ -406,7 +458,8 @@ public class Main {
 	- Если метод не может быть наследован, то он не может быть переопределен  
 	- Конструкторы не могут быть переопределены*/
 
- "Видео Devcolibri Урок 28, 29 Исключения " /* 
+ "Исключения " /*
+			  	"Видео Devcolibri Урок 28, 29 "
     "Чтобы не выдавало ошибку в коде или при вводе данных пользователем 
      Можно указать какая ошибка возможна и что делать в таком случае" 
     String[] st = new String[2]; //Создаём массив из двух эл.
@@ -432,7 +485,7 @@ public class Main {
 
  "Видео 23 GUI Java (Визуальный) интерфейс. (см. Проет Number 6) "
 
-}
+
 
 
 
