@@ -7,10 +7,37 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+		"На изучение" /*
+		map1.keySet().toArray(nameArr); // Что делает toArray(nameArray)
+		"Из задачи 2, Блок Списки" 
+	  
+		Scanner scanner = new Scanner(System.in);
+			  Scanner scanner2 = new Scanner(System.in);
+			  Class bowling = new Class();
+			  System.out.println("Введите количество игроков: ");
+			  int amountPlayers = scanner.nextInt();
+			  for (int i = 0; i < amountPlayers; i++) {
+				  String nameAndScorePlayer = scanner2.nextLine(); 
+					String [] values = nameAndScorePlayer.split(" "); 
+					//Почему-о пришлось создать второй сканер
+				  String namePlayer = values[0];
+				  int playerScore = Integer.parseInt((values[1]));
+				  bowling.addPlayer(namePlayer, playerScore); 
+				  //  Интересеная конструкция (см. класс)
+			  }
+			  bowling.getWinner(); 
+	  
+		Collections.		*/
+	  
+
+
+
+
 "\n"    //  - новой строки
  String[] st = "Hello World".split(" ");  
 	"Разбиваем строку на два слова
-	st - спсок в котором харниться отдельно Hello и World" 
+	st - список в котором харниться отдельно Hello и World" 
 	  
 	System.err.println(); // вместо out - err. будет подсвеченно красным (ошибка)
 
@@ -22,8 +49,10 @@ public class Main {
             return a + b; //в классе
         int x = Math.summ (12, 23); }  переменная summ из класса Math в Main */
 
- public /private /*
-      public - "доступен отовсюду - private - доступ только внутри класса 
+ public /private/ protectd  /*
+      public - "доступен отовсюду - 
+		private - доступ только внутри класса
+		protected - видимые только для подклассов  
       Если нисего не ставить то доступ будет только в этом пакете" */
 
  "Getter and Seter" /*
@@ -60,7 +89,9 @@ public class Main {
 		  || - и 
 */
 
- "Видео Devcolibri Урок 9 Преобразование типов данных" /*
+ "Преобразование типов данных" /*
+		  
+ 		"Видео Devcolibri Урок 9"
     static int a = 2; static double b = 4.9; int c = (int) b;
     c - будет равно 4, такое преобразование убирает не целочисленное
     double d = a; // в таком случае можно  без ()
@@ -82,7 +113,8 @@ public class Main {
     int t = fl.intValue(); // Преобразование не в ссылочный
     */
 
- "Видно Devcolibri 10 Арифметические операции и переменные" /*
+ "Арифметические операции и переменные" /*
+		  "Видно Devcolibri 10 "
     int a = -4; Math.abs(a); // Модуль
     Math.sin(a); // Синус
     Math.PI; // Число Пи
@@ -94,7 +126,8 @@ public class Main {
     final int a;   // невозможно переназначить (переменные и методы)
     null; если переменная отстутствует */
 
- "Видно Devcolibri 11 Условия и Циклы" /* 
+ "Условия и Циклы" /* 
+		  Видно Devcolibri 11 
     == равно, != не равно, >= <=, || или, && и, !x - не переменная
     if () { } else if { } else {}
     switch (5) // { переключатель
@@ -112,7 +145,8 @@ public class Main {
         Список состоит из строк. В переменную s будет по очереди 
 		   помощены данные
 
-         Пример:
+			"Sololern"
+      Пример:
         for(int i=0;i<3;i++) //{
             String input = sc.nextLine();
             String[] values = input.split(" ");
@@ -122,8 +156,8 @@ public class Main {
          } Принимает имя и кол. очков в одной строе.
          Далее разделяет имя и очки в разные переменные. */
 
- "Видео Devcolibri Урок 14 и 19 Методы, функции  и Классы"  
-
+ "Методы, функции  и Классы" /* 
+				"Видео Devcolibri Урок 14 и 19" 
     "Метод и функция это одно и тоже. Пишутся вне метода main 
     Метод то что умеет делать Класс. Функция то что выполняет какие либо действия."
 
@@ -163,17 +197,12 @@ public class Main {
 	 }
 	 // В main 
 	 Animal dog = new Animal();
-	 dog.bark(); // Вывод "Woof-Woof"
-	 
-	 
+	 dog.bark(); // Вывод "Woof-Woof" 
+	 */
 
+ "Массивы" /* 
 
-	 
-
-
-
-
- "Видео Devcolibri Урок 16 Массивы" /* 
+ 		Видео Devcolibri Урок 16 
     int nums1 [] = new int[i]; // i кол. элементов
     nums1 [n] = 2; // - n индекс числа 2 в массиве
     int [ ] nums2 = {1, 20, 32, 4}; // задать масив проще через фигурные
@@ -193,7 +222,8 @@ public class Main {
 		}
 		System.out.println("\n"); */
 
- "Видео Devcolibri Урок 30 Коллекции (Динамические массивы) " /* 
+ "Коллекции (Динамические массивы) "  /* 
+			"Видео Devcolibri Урок 30" 
     "Коллекции - Массивы в которые мы можем добавлять/удалять/менять элементы
        Collection и Map  Интерфейсы 
           /   |   \
@@ -203,8 +233,16 @@ public class Main {
      Queve - очередь 
      Map - хранит пары эл. (id - эл.). "
 
-    "Интерфейс List " 
-    List list1 = new ArrayList(); создание в main. 
+    "Интерфейс List (ArrayList)" ;
+	 ArrayList colors1 = new ArrayList(); // создание списка с разными типами данных
+	 ArrayList<String> colors2 = new ArrayList<String>(10);
+	 ; // создание списка строк с начальной длиной 10
+	 ArrayList<Integer> colors2 = new ArrayList<Integer>(12);
+	 ; // создание списка чисел с начальной длиной 12
+	 ; // Список хранить ОБЪЕКТЫ. Поэтому указываетя именно тип класса 
+	 ; // Integer, Double...
+
+    List list1 = new ArrayList(); // создание в main. 
     list1.add(2); // добавляем занчения
     list1.add("Hello"); // Список с разными данными
     List<Integer> list2 = new ArrayList(); // Список с конкретным типом данных
@@ -213,8 +251,8 @@ public class Main {
         System.out.println(list2.get(0)); // вызываем с помощью get(Индекс)
     list2.remove(0); // удалить эл. с индексом 0. при удалении индексы сдвигаются
 
-    for (int n: list2) // { перебор всех элементов ы списке
-        System.out.println(n); // }
+    for (int n: list2)  {  //перебор всех элементов ы списке
+        System.out.println(n); } 
     list2.indexOf(x); // получает индекс элемента x
     list2.addAll(y); // добавляет входящую коллекцию уже к текущей
     list2.clear(); // очищает полность список
@@ -225,14 +263,14 @@ public class Main {
     iterator1.hasNext(); // Проверяет есть ли следующий элемент
     iterator1.next(); // передвигается на первый элемент
 
-    while (iterator1.hasNext())  // {  для вывода всех эл. коллекции list
-        System.out.println(iterator1.next());// }
+    while (iterator1.hasNext())  { // для вывода всех эл. коллекции list
+        System.out.println(iterator1.next()); }
     iterator1.remove(); // удаляет тот элемент на которм стоит указатель
 
     boolean empty1 = list2.isEmpty(); // говорит пуста ли наша коллекция. есть = false
 	 
 
-    "Интерфейс Set" 
+    "Интерфейс Set (Linkedlist)" 
     Set<String> set1 = new HashSet<>(); // HashSet только один из способов
     set1.add("string1"); // Добавить есть, а вывести (get) нет
     set1.add("string1");
@@ -270,6 +308,7 @@ public class Main {
     for (String k : strings3) // { Так мы получим списко ключей
         System.out.println(k); // } key4, key 3, key2, key1
     "Так ключи будет в произвольном порядке (или в обратно, но это не точно)"
+	 map1.keySet(); // можно вывести так, но значения буду в ввиде массива
 
     for (Integer k2 : map1.values()); //{  так мы получим все значемния
             System.out.println(k2); // }  55, 1, 0, 2
@@ -277,16 +316,27 @@ public class Main {
     map1.containsKey(); // Проверяем есть ли конкретный ключ false\true
     map1.containsValue(); // Проверяем есть ли такое значение false\true
     " Остальное всё как в лист "
+
+	
+	// Пример как можно добавить в MAP разные значения с одной строки 
+	 for (int i = 1; i < amountPlayers; i++) {
+			String nameAndScorePlayer = scanner.nextLine(); 
+		 	String [] values = nameAndScorePlayer.split(" ");
+			String name = values[0];
+			int score = Integer.parseInt(values[1]); 
+		}
 	 */
 
- "Видео Devcolibri Урок 17 Нейминг" /* 
+ "Нейминг" /* 
+ 		"Видео Devcolibri Урок 17" 
     public class JavaExampelsCode {} // Классы
     int ageDog; // Переменные
     void getEmail () {} // Метод (Действия)
     public class Cat {} // Класс
 	 */
 
- "Видео Devcolibri Урок 21 Конструкторы. "/* 
+ "Конструкторы. "/*
+			"Видео Devcolibri Урок 21" 
      "Конструктор создаётся в классе"
 	      public Cat(int age, String catBreed, String name) {
             this.age = age;
@@ -312,21 +362,38 @@ public class Main {
          Он просто пустой"
 			*/
     
- "Видео Devcolibri Урок 22/23 Наследование/Полиморфизм/Абстарктные классы" /*
+ "Наследование/Полиморфизм/Абстарктные классы" /*
+	 	Видео Devcolibri Урок 22/23 
 	 
     "Наследование"
     public class Sportsman extends People {} // унаследование класса
-   import People.People // импортируем класс если он находиться в другом пакете
-    "Создаём конструктор так как в people он уже есть "
+    import People.People; // импортируем класс если он находиться в другом пакете
+    " Создаём конструктор так как в people он уже есть";
     public Sportsman (String name, String lastName, int age, Cat cat) {
-       super } 
-		 " обращается к родительскому классу, а точнее к конструктору
-     в классе должен быть такой же конструктор но уже с пременными 
-     т.е низший класс передаст данные введенные в него в родительский " 
+       super } // обращается к родительскому классу, а точнее к конструктору
+     " в классе должен быть такой же конструктор но уже с пременными 
+     т.е низший класс передаст данные введенные в него в родительский" ; 
+		
+	  "Пример" ;
+		class Animal { // Есть класс Animal
+			protected int legs; // у представителей класса Animal есть legs
+			public viod eat () { Sysout("Animal eat"); } //они все умеют есть
+		} 
 
-   "Полиморфиз"
-    " возможность объектов с одинаковой спецификацие иметь разную реализацию
-     В классах наследниках мы можем переопредилить метод "
+		class Dog extends Animal {  // чтобы сделать подкласс Dog
+			Dog () {  
+				legs = 4; // у всех представителей Класса  Dog, legs будет равно 4
+			}
+		} 
+
+		"В main";
+		Dog dog1 = new Dog(); // создали первую собаку 
+		dog1.eat; // вызвали метод из супер класса (Animal)
+
+
+   "Полиморфиз - переопределение методов";
+    "Возможность объектов с одинаковой спецификацие иметь разную реализацию
+     В классах наследниках мы можем переопредилить метод";
     public void sayHello() {System.out.println("Hello!");} // в основном классе
 
     @Override // в наследнике
@@ -334,14 +401,14 @@ public class Main {
 			} // если вызывть в main через наследника он выдаст Hello!MF 
 
     "Абстрактные классы
-    Класс в которых перечисляется всё что делают объекты этого класса "
+     Класс в которых перечисляется всё что делают объекты этого класса ";
     public abstract class Animal {
-        abstract void eat ();
+        abstract void eat (); 
         abstract void say (); }
-    public class Cat extends Animals {
-		 
-	 } // Вызвать абстрактный метод в Main
-     "Мы не можем создать екземпляр этого класса в Main"
+    public class Cat extends Animals { } 
+	 
+	 // Вызвать абстрактный метод в Main
+     "Мы НЕ МОЖЕМ создать екземпляр этого класса в Main"
         Animals a = new Animals ();
      "В классах наследниках методы реализуются через переопределение"
         @Override // в наследнике
@@ -354,29 +421,45 @@ public class Main {
              }
          }; */
 
- "Видео 22 Интерфесы (Исполнения)" /*
+ "Интерфесы (Исполнения)" /*
+
+			Видео 22 
         public interface Array {
 		  	} //автоматически static и abstract
         "показывают что будет происходить в классе, но не реализовывать его."
-        public class MyArray implements Array {} "через запятую можно несколько интерфесов"
-        "реализовывать интерфейс Array в классе MyArray."
+        public class MyArray implements Array {} //"через запятую можно несколько интерфесов"
+        
+		  "реализовывать интерфейс Array в классе MyArray."
         @Override // переписывает метод и реализуем его
         "в интерфейсах все переменные константы
          Поэтому в интерфейсах чаще указывает Что будет делать объект" */
 
- "Видео Devcolibri Урок 27 Перегрузка методов " /* 
+ "Перегрузка методов " /* 
+
+			  "Видео Devcolibri Урок 27" 
     "Это возможность перегрузить уже существующий метод, 
      для изменения его функционала, не переименовывая 
     смотри класс MethadExam"
+	 Короче, разиличное исполнение методов в зависимости от 
+	 загруженных в него переменных (int) (String) ()
+
     MethadExam exam1 = new MethadExam();
     exam1.get(); // ничего не передаёт
     exam1.get("Hello MF"); // Принимает строку
     exam1.get(7); // принимает число
     "Одно и тоже имя у метода
     Имеет разные типы данных и их количество
-    Ctrl+P - увидеть какие параметры может принимать метод" */
+    Ctrl+P - увидеть какие параметры может принимать метод" 
+	 
+	 Правила Переопределения Методов: 
+	- Должны иметь одинаковые возвращаемый тип и аргументы  
+	- Уровень доступа может быть более ограничивающим, чем уровень доступа переопределенных методов. (Например: Если метод суперкласса объявлен как public, то переопределенный метод в подклассе не может быть ни private ни protected) 
+	- Метод, объявленный с помощью ключевых слов final или static не может быть переопределен  
+	- Если метод не может быть наследован, то он не может быть переопределен  
+	- Конструкторы не могут быть переопределены*/
 
- "Видео Devcolibri Урок 28, 29 Исключения " /* 
+ "Исключения " /*
+			  	"Видео Devcolibri Урок 28, 29 "
     "Чтобы не выдавало ошибку в коде или при вводе данных пользователем 
      Можно указать какая ошибка возможна и что делать в таком случае" 
     String[] st = new String[2]; //Создаём массив из двух эл.
@@ -402,7 +485,7 @@ public class Main {
 
  "Видео 23 GUI Java (Визуальный) интерфейс. (см. Проет Number 6) "
 
-}
+
 
 
 
