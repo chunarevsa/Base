@@ -29,9 +29,14 @@ public class Main {
 			  bowling.getWinner(); 
 	  
 		Collections.		*/
-	  
 
-
+		int f;
+		f= ++f + f++;
+		System.out.println(f);
+	  // ++f даст 6, а f++ тоже будет 6 в момент, 
+	  // когда 6+6 улетит влево. То, что потом справа ++ сработает, уже пофигу
+	
+	Do  while
 
 
 "\n"    //  - новой строки
@@ -99,8 +104,13 @@ public class Main {
     int h = f; // так мы получим Юникод этого символа
 
     ССылочные типы
-    String st = "27"; Integer in = 2; Double dou = 7.8;
-    Float fl = 2.6f; Short sh = 3;
+    String st = "27"; 
+	 Integer in = 2; // от -2147483648 до 2147483647
+	 Double dou = 7.8; // от -1.7Е+308 до 1.7Е+308
+    Float fl = 2.6f; от -3,4Е+38 до 3,4Е+38
+	 Short sh = 3; // от -32768 до 32767
+	 byte 100 // от -128 до 127
+	 char // от  0  до \uFFFF
 
     Number n = fl;
     Number n1 = dou;
@@ -337,11 +347,11 @@ public class Main {
 
  "Конструкторы. "/*
 			"Видео Devcolibri Урок 21" 
-     "Конструктор создаётся в классе"
-	      public Cat(int age, String catBreed, String name) {
-            this.age = age;
-            this.catBreed = catBreed;
-            this.name = name;
+   "Конструктор создаётся в классе"
+	   public Cat(int age, String catBreed, String name) {
+         this.age = age;
+         this.catBreed = catBreed;
+         this.name = name;
     } 
 	 "Название обязательно должно совпадать с название класса.
     У конструктора нет типа данных, это его отличает от метода"
@@ -351,21 +361,21 @@ public class Main {
      Без this переменная конструктора будет равана переменной конструктора. "
 
     " в Main вместо 3 строчек"
-        cat1.setAge (4);
-        cat1.setCatBreed ("Pers");
-        cat1.setName ("Barsik");
-        "Теперь можно задать все параметры в Main одной строчкой"
-        cat1 = new Cat (2, "Pers", "Barsik");
-        " обращение к конструктору. Будут подсвечиваться подсказки"
-        new ; " по сути мы вызываем конструктор.
-         Конструктор есть в классах по умолчанию, даже если мы его не создавали 
-         Он просто пустой"
-			*/
+      cat1.setAge (4);
+      cat1.setCatBreed ("Pers");
+      cat1.setName ("Barsik");
+      "Теперь можно задать все параметры в Main одной строчкой"
+      cat1 = new Cat (2, "Pers", "Barsik");
+      " обращение к конструктору. Будут подсвечиваться подсказки"
+      new ; " по сути мы вызываем конструктор.
+      Конструктор есть в классах по умолчанию, даже если мы его не создавали 
+      Он просто пустой"
+		*/
     
  "Наследование/Полиморфизм/Абстарктные классы" /*
 	 	Видео Devcolibri Урок 22/23 
 	 
-    "Наследование"
+   "Наследование"
     public class Sportsman extends People {} // унаследование класса
     import People.People; // импортируем класс если он находиться в другом пакете
     " Создаём конструктор так как в people он уже есть";
@@ -374,7 +384,7 @@ public class Main {
      " в классе должен быть такой же конструктор но уже с пременными 
      т.е низший класс передаст данные введенные в него в родительский" ; 
 		
-	  "Пример" ;
+	"Пример" ;
 		class Animal { // Есть класс Animal
 			protected int legs; // у представителей класса Animal есть legs
 			public viod eat () { Sysout("Animal eat"); } //они все умеют есть
@@ -484,6 +494,17 @@ public class Main {
      в классе добавляем @override (см класс)" */ 
 
  "Видео 23 GUI Java (Визуальный) интерфейс. (см. Проет Number 6) "
+
+
+ " Задачки из телеграмма"
+ 	synchronized; // ключевое слово, чтобы показать, 
+ 	// что с методом может работать не более чем один поток одновременно
+
+	Boolean b = new Boolean("Hello");
+	System.out.println(b); // Выдаст false
+
+
+
 
 
 
