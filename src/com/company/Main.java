@@ -345,7 +345,7 @@ public class Main {
     public class Cat {} // Класс
 	 */
 
- "Конструкторы. "/*
+ "Конструкторы. "
 			"Видео Devcolibri Урок 21" 
    "Конструктор создаётся в классе"
 	   public Cat(int age, String catBreed, String name) {
