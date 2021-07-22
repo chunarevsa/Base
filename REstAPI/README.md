@@ -40,3 +40,7 @@ JavaScript Object Natation - описание объектов
 
 Если всё же нужно обработка вручную можно воспользоваться Jackson
 (Пример в REstApi.java)
+
+https://www.youtube.com/watch?v=ZGCVdzhorII
+https://www.youtube.com/watch?v=7mbNStvpad0
+https://www.youtube.com/watch?v=ZDk4UnOHXXA
