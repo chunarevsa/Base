@@ -77,5 +77,9 @@ git checkout -b <имя ветки> - создание и переключени
 #### Разное 
 git checkout -b newlocalbranchname origin/branch-name
 Подгрузить ветку с удаленного репозитория 
+ИЛИ
+git branch tsa-29 - создать ветку
+git branch --set-upstream-to=origin/tsa-29 tsa-29 - подгрузить
+git pull 
 
 
