@@ -341,3 +341,11 @@ public static void main(String[] args) throw MyException
 "Нужно добавить полсе Main. Говорит о том что в этом методе есть такое исключение
 далее обрабатываем с помощью true catch. 
 в классе добавляем @override (см класс)" 
+
+##### Java Reflection API.
+Рефлексия  механизм исследования данных о программе во время её выполнения. Рефлексия позволяет исследовать информацию о полях, методах и конструкторах классов.
+С помощью рефлексии можно задать значение private поля, если у него отсутствует сеттер. 
+ Field field = myClass.getClass().getDeclaredField("name");
+       field.setAccessible(true);
+		 field.set(myClass, (String) "new value");
+
